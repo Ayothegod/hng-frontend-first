@@ -5,7 +5,7 @@ const Button = ({title}) => {
   return (
     <div>
         
-            <button >
+            <button className='but' >
             {title}
             </button>
         {/* </Link> */}

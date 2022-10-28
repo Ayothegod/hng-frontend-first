@@ -1,11 +1,9 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  text-align: center;}
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -15,27 +13,142 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+} */
+.App{
+  /* background-color: black; */
+  height: 100vh;
+  width: 100vw;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav{
+  display: flex;
+  justify-items: end;
+  margin-left: 90%;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+.mobile{
+  background-color: #fff;
+  border: 1px dotted rgb(224, 212, 212);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.mobile:hover{
+  background-color: #EAECF0;
+}
+.mobile:focus{
+  background-color: #EAECF0;
+}
+.mobile-share{
+  font-size: 30px;
+  padding:0px 5px 15px;
+}
+.desktop-share{
+  display: none;
+}
+.image{
+  /* margin-top: 30px; */
+  height: 100px;
+  border-radius: 50%;
+}
+.image:hover{
+  opacity: 0.7;
+}
+.name{
+  font-weight: 700;
+  font-size: 25px;
+}
+.links{
+  /* margin: 0 10px 0 0; */
+    margin: 0 5vw;
+}
+a{
+  padding-top: 90px;
+}
+
+button{
+  width: 100%;
+  background-color:#EAECF0 ;
+  margin: 5px 0;
+}
+.but{
+  font-size: 18px;
+  border: 1px solid rgb(245, 238, 238);
+  padding: 20px 0;
+}
+ button:hover{
+  background-color: #D0D5DD;
+}
+button:focus{
+  background-color: #EAECF0;
+}
+button:disabled{
+  background-color: #FCFCFD;
+} 
+.slacklink{
+  display: none;
+}
+.icons{
+  margin: 40px 0 50px;
+  position: relative;
+}
+.slack{
+  margin: 0 25px 0 0;
+  height: 33px;
+}
+.github{
+  margin: 0 0 0 25px;
+  height: 30px;
+}
+.icons::after{
+  content: "";
+  position: absolute;
+  width: 90vw;
+  left: 5%;
+  top: 70px;
+  height: 1px;
+  background-color: rgb(207, 196, 196);
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  padding:0 20px 30px;
+  margin-top: 90px;
+}
+.wide{
+  width: 200px;
+  font-size: 14px;
+}
+@media ( min-width:800px ){
+  .mobile-share{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .desktop-share{
+    display: block;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .links{
+    margin: 0 5vw;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  .footer{
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-between;
+     margin: 0 auto;
+  }
+  .image{ 
+    height: 150px;
+    border-radius: 50%;
+  }
+  .but{
+    font-size: 18px;
+    padding: 35px 0;
+    border: 1px solid #EAECF0;
+    outline: none;
+  }
+  .mobile{
+    padding: 10px;
+  }
+}  
