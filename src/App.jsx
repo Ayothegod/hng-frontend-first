@@ -1,13 +1,10 @@
 import './App.css'
 import ProfileImage from '../src/assets/20220529_232847.jpg'
-import IconMen from '../src/assets/Iconmen.png'
 import IconExit from '../src/assets/Iconexit.png'
 import Title from '../src/assets/Vectorzurititle.png'
 import IG from '../src/assets/I4gingressivepng.png'
 import Slack from '../src/assets/slack.png'
-// import Camera from '../src/assets/Iconcamera.png'
 import Github from '../src/assets/Icongithub.png'
-
 import Button from './components/Button'
 
 function App() {
@@ -17,7 +14,6 @@ function App() {
 
       <div className="nav">
         <div className="mobile">
-        {/* <img className='mobile-share' src={IconMen} alt="" /> */}
         <div className="mobile-share">
           ...
         </div>
@@ -30,7 +26,6 @@ function App() {
       <div className="profile">
         <div className="img">
         <img className='image' src={ProfileImage} alt="profile image" />
-        {/* <img className='image-1' src={Camera} alt="profile hober" /> */}
 
         </div>
         <p className='name'>Adebisi Ayomide</p>
